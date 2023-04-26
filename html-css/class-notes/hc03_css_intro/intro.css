@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.images{
+    width: 400px;
+    border-color: #ece;
+    border-width: 6px;
+    border-style: solid;
+    border-style: inset;
+    border: 3px inset #bebe;
+}
