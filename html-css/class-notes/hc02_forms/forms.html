@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>FORMS</h1>
+    <form action="result.html" method="get">
+      <section id="names">
+        <!--! NAME -->
+        <label for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          name="isim"
+          value=""
+          required
+        /><br /><br />
+        <!--! EMAIL -->
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" placeholder="email" />
+        <br /><br />
+        <!--! PASSWORD -->
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="min 8 chars"
+          required
+        />
+        <br />
+        <br />
+        <!--! AGE -->
+        <label for="age">Age</label>
+        <br />
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="0"
+          placeholder="Enter your age"
+        />
+        <br /><br />
+        <!--! BIRTHDAY DATE-->
+        <label for="birth">Birthday</label>
+        <br />
+        <input type="date" name="birthday" id="birth" />
+        <!--! GENDER RADIO BUTON-->
+        <p>Gender</p>
+        <label for="man">Man</label>
+        <input type="radio" name="gender" id="man" value="man" />
+        <br />
+        <label for="woman">Woman</label>
+        <input type="radio" name="gender" id="woman" value="woman" />
+        <br />
+        <label for="none">None</label>
+        <input type="radio" name="gender" id="none" value="none" checked />
+        <br /><br />
+        <!--! FAVORI CARS-->
+        <p>FAVORI CARS</p>
+        <label for="bmw">BMW</label>
+        <input type="checkbox" name="car1" id="bmw" />
+        <br />
+        <label for="mercedes">Mercedes</label>
+        <input type="checkbox" name="car2" id="mercedes" />
+        <br />
+        <br /><br />
+      </section>
+      <!--! SELECT -->
+      <section>
+        <p>Tatli seciniz</p>
+        <select name="tatli" id="tatli">
+          <optgroup label="sutlu">
+            <option value="sutlac">Sutlac</option>
+            <option value="kazandibi">Kazandibi</option>
+          </optgroup>
+          <optgroup label="serbetli">
+            <option value="kunefe">Kunefe</option>
+            <option value="baklava">Baklava</option>
+            <option value="havuc">Havuc Dilimi</option>
+            <option value="kadayif">Kadayif</option>
+          </optgroup>
+        </select>
+      </section>
+      <!--! TextArea -->
+      <section>
+        <br><br>
+        <label for="comment">Please enter comments</label>
+        <br>
+        <textarea name="comment" id="comment" cols="50" rows="10" style="resize: 100;" maxlength="100" placeholder="en fazla 100 karakter"></textarea>
+      </section>
+      <!--! SUBMIT -->
+      <section id="butons">
+        <br><br>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Delete" />
+      </section>
+    </form>
+  </body>
+</html>
