@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .center{
+            text-align: center;
+        }
+        .box{
+            width: 200px;
+            border: 5px solid red;
+            padding: 10px;
+        }
+        .content{
+            box-sizing: content-box;
+        }
+        .border{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    <div class="content box center" c>content box</div>
+    <div class="border box center">border-box</div>
+</body>
+</html>
