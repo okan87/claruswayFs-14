@@ -1,0 +1,29 @@
+.box {
+    border: 2px solid indigo;
+    margin-bottom: 7rem;
+    width: 20rem;
+    height: 7rem;
+    /* height: auto; */
+  }
+  .box1 {
+    overflow: visible; /** default */
+  }
+  
+  .box2 {
+    overflow: hidden;
+  }
+  
+  .box3 {
+    overflow: scroll;
+  }
+  
+  .box4 {
+    /* overflow-y: hidden;
+    overflow-x: auto; */
+    overflow: auto;
+  }
+  
+  .box4 .uzun-satir {
+    width: 1000px;
+  }
+  

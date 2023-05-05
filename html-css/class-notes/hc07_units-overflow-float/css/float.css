@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 30%;
+    float: left;
+  }
+  
+  /* .text {
+    float: right;
+  } */
+  
+  .clear {
+    clear: both;
+  }
+  .box {
+    float: left;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .box1 {
+    background-color: green;
+    width: 30%;
+  }
+  
+  .box2 {
+    background-color: magenta;
+    width: 25%;
+  }
+  
+  .box3 {
+    background-color: turquoise;
+    width: 35%;
+  }
+  
