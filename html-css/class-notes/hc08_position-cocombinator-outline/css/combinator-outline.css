@@ -1,0 +1,56 @@
+/*? COMBINATORS */
+* {
+    box-sizing: border-box;
+    margin: 0.5rem;
+  }
+  
+  /** Descendent Selector*/
+  /*! box class'ı icerisinde tüm p'leri sec */
+  .box p {
+    color: red;
+  }
+  
+  /* .box h1 {
+    color: blue;
+  } */
+  
+  /** Child Selector */
+  /*! parent'i box class olan tüm h1'leri seç */
+  .box > h1 {
+    color: blue;
+  }
+  
+  /** Adjacent Sibling Selector */
+  /*! box elementi kapandiktan sonraki ilk h1 elementi secer */
+  .box + h1 {
+    color: blueviolet;
+  }
+  
+  /** General Sibling Selector */
+  /*! box elementi kapandiktan sonraki tüm p elementleri secer */
+  .box ~ p {
+    color: green;
+  }
+  
+  h1#outline {
+    color: red;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid red;
+    font-size: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1#outline:hover {
+    outline: 2px solid indigo;
+    outline-offset: 0.2rem;
+  }
+  
+  input:hover {
+    /* outline: none; */
+    outline: 3px solid red;
+  }
+  
