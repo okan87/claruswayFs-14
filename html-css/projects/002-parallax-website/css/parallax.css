@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.first{
+    font-family: Lato;
+    font-size: 3rem;
+    padding: 2rem;
+    letter-spacing: 0.5rem;
+    top: 50%;
+    left: 50%;
+    
+    
+
+}
