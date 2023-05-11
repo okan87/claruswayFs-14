@@ -1,17 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  opacity: 0.9;
 }
-.first{
-    font-family: Lato;
-    font-size: 3rem;
-    padding: 2rem;
-    letter-spacing: 0.5rem;
+.general {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-1 {
+  background-image: url("../img/bg.jpg");
+}
+/* .cerceve{
+    /* position: relative;
     top: 50%;
     left: 50%;
-    
-    
-
+    transform: translate(-50%, -50%); */
+.porte {
+  font-size: 3rem;
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  letter-spacing: 0.5rem;
+  outline: 0.5rem inset purple;
+  outline-offset: 1rem;
+  border-radius: 25px 0;
+  line-height: 2.5rem;
+}
+.section-2 {
+  background-image: url("../img/bg1.jpg");
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.text-light {
+  background-color: white;
+  color: black;
+  padding: 3rem 5rem;
+  line-height: 1.5rem;
+}
+.article-title {
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+.explanation-light {
+  font-size: 1.1rem;
+}
+.clarus-adj {
+  position: relative;
+  top: 50%;
+}
+.section-3 {
+  background-image: url("../img/bg2.jpg");
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+.text-black {
+  position: relative;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 3rem 5rem;
+  line-height: 1.5rem;
+}
+.article-title-black {
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+.explanation-black {
+  font-size: 1.1rem;
+}
+.cerceve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+}
+.porte-1 {
+  padding: 20px;
+  border-top-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  outline: 0.4rem inset rgb(136, 16, 136);
+  outline-offset: 0.1rem;
+  line-height: 2.4rem;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  outline-offset: 1rem;
+  border-radius: 25px 0;
+  line-height: 2.5rem;
+}
+.section-4 {
+  background-image: url("../img/bg3.jpg");
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.section-5 {
+  background-image: url("../img/bg4.jpg");
+  display: block;
+  text-align: center;
+  justify-content: center;
 }
