@@ -18,11 +18,12 @@
 .section-1 {
   background-image: url("../img/bg.jpg");
 }
-/* .cerceve{
-    /* position: relative;
+.cerceve{
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%); 
+  }
 .porte {
   font-size: 3rem;
   color: white;
