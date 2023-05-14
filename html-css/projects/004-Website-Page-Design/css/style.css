@@ -69,11 +69,12 @@
   background-image: url("../img/banner.jpg");
   background-position: center;
   background-size: cover;
-  height: 509.6px;
+  height: 100vh;
   position: sticky;
   width: 100%;
+  height: 100vh;
   max-height: calc(100vh - 204px);
-  outline: rgb(66, 153, 225) solid 1px !important;
+  /* outline: rgb(66, 153, 225) solid 1px !important; */
 }
 .main__upper {
   position: absolute;
