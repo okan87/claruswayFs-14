@@ -65,7 +65,7 @@
 }
 /*! ---------------- MAIN---------------------- */
 /* ---------------- MAIN UPPER---------------------- */
-.main {
+/* .main {
   background-image: url("../img/banner.jpg");
   background-position: center;
   background-size: cover;
@@ -73,12 +73,19 @@
   position: sticky;
   width: 100%;
   height: 100vh;
-  max-height: calc(100vh - 204px);
-  /* outline: rgb(66, 153, 225) solid 1px !important; */
+  max-height: calc(100vh - 204px); 
+ outline: rgb(66, 153, 225) solid 1px !important; 
+} */
+main img {
+  width: 100%;
+  height: 515px;
+  margin-bottom: 40px;
+  
+ 
 }
 .main__upper {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 10%;
 }
 .main__upper--baslik {
@@ -101,14 +108,14 @@
   border-radius: 10px;
   background-color: rgb(217, 175, 217);
   font-weight: 700;
-  outline: rgb(66, 153, 225) solid 1px !important;
+  
 }
 /* ---------------- MAIN DOWN---------------------- */
 .main__down {
   font-family: "Open Sans", sans-serif;
   padding: 2rem;
   text-align: justify;
-  outline: rgb(66, 153, 225) solid 1px !important;
+  
 }
 
 .slack{
