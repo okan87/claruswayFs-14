@@ -1,0 +1,37 @@
+.abouthome__main{
+    display: flex;  
+    margin-bottom: 11.2rem;  
+    gap: 2rem;
+    font-size: 0.8rem;
+    margin-bottom: 15.5rem;
+}
+.abouthome__main-left{
+    padding: 1rem;
+    /* display: flex;
+    flex-direction: column; */
+    flex-grow: 3;
+}
+.abouthome__main-left--paragraf2, .abouthome__main-left--paragraf1{
+    margin-top: 1rem;
+}
+.abouthome__main-left--paragraf2{
+    background-color: #35424A;
+    padding: 1rem;
+    color: white;
+    
+    
+}
+.abouthome__main-right{
+    margin: 1rem;
+    background-color: #35424A;
+    padding: 1rem;
+    color: white;
+    height: 8.5rem;
+}
+.abouthome__main-right--paragraf{
+    /* padding: 1rem;
+    background-color: #35424A;
+    color: white; */
+    display: block;
+    margin-top: 1rem;
+}

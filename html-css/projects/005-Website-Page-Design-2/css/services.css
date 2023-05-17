@@ -1,0 +1,46 @@
+.main__services{
+display: flex;
+padding: 2rem;
+gap: 2rem;
+
+}
+.main__services{
+    margin-bottom: 2rem;
+}
+.main__services-left--box{
+border: 1px solid black;
+margin: 0.5rem;
+background-color: #E6E6E6;
+padding: 1rem;
+font-size: 0.8rem;
+
+
+}
+.main__services-left--box h3{
+    margin-left: 0.5rem;
+}
+.main__services-left--box p{
+    margin: 0.5rem;
+}
+.main__services--right{
+    background-color: #35424A;
+    color: white;
+    padding: 1rem;
+    width: 25%;
+    height: 14rem;
+    font-size: 0.8rem;
+    margin-left: 4rem;
+}
+.main__services--right .inputs{
+    margin-top: 1rem;
+    font-family: 0.8rem;
+    flex-grow: 1;
+}
+.main__services--right input, textarea{
+    width: 20rem;
+}
+button{
+    background-color: #E8491D;
+    padding: 0.5rem 1rem;
+    color: white;
+}
