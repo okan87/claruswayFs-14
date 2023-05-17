@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav {
+  background-color: cadetblue;
+  list-style-type: none;
+  padding: 1rem;
+  height: 15rem;
+
+  /*? Yazilari hizalamak icin */
+  text-align: center;
+
+  /*? Flex ozellgini aktif hale getirdik */
+  display: flex;
+
+  /*! Elemanların dizilis yonu : column, row, row-reverse, column-reverse*/
+  flex-direction: row; /*? defaut: row*/
+
+  /*? Satirlar arasi bosluk, ilk verilen satirlar arasi, 2. verilen sutunlar arasi bsoluktur */
+  gap: 1rem;
+
+  /*? sikistirma veya alt satira gecebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: wrap;
+
+  /*! Yatay Hizalama: justify-content
+  /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+  justify-content: center;
+
+  /*! Dikey Hizalama => align-items
+  /**  flex-start, flex-end, center, stretch,baseline */
+  /* align-items: flex-start; */
+
+  /*! Cok satirli verilerin dikeyde hizalanmasi icin kullanilir*/
+  align-content: flex-start;
+}
+
+ul.nav li {
+  background-color: chocolate;
+  width: 7rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+/*! FLEXBASIS, FLEX-GROW */
+
+.container {
+  margin-top: 2rem;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.container * {
+  background-color: crimson;
+}
+
+.container header {
+  /*? flex-grow bir item'in digerlerine gore buyume orani belirler. fle-grow:2 , 2 kat buyu demektir. */
+  /* flex-grow: 2; */
+
+  /*? flex-basis bir item'in kaplayacgi uzunlugu belirler. %, rem,px gibi degerler alabilir */
+  flex-basis: 100%;
+
+  flex: 1 100%;
+  /** Flex 2 degerli de yazilabilir. Bu durumda:
+ /** İlk deger flex-grow 2.si ise flex-basis degeri olur.*/
+}
+
+.container footer {
+  flex-basis: 100%;
+
+  /*? Birimli tek bir deger varsa bu flex-basis olcusudur (width/height) */
+  flex: 100%;
+}
+.container main {
+  flex-grow: 3; /** main digerlerine gore 3 kat daha fazla buyuyebilir.*/
+
+  /*? flex-grow: 3,   flex-basis:0 */
+  flex: 3; /** main digerlerine gore 3 kat daha fazla buyuyebilir.*/
+}
+
+.container .left {
+  flex-grow: 1; /** left digerlerine gore 1 kat daha fazla buyuyebilir.*/
+}
+
+.container .right {
+  flex-grow: 2; /** right digerlerine gore 1 kat daha fazla buyuyebilir.*/
+
+  /*shrink kuculme katsayidir.  */
+  flex-shrink: 2;
+
+  /* !flex-grow: 0 ise item hic büyümez */
+}
