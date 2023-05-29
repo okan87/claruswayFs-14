@@ -1,0 +1,130 @@
+header {
+  text-align: center;
+  margin: 1rem;
+}
+
+code {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: red;
+}
+
+main {
+  margin: 1rem;
+  > ul {
+    padding: 2rem;
+    line-height: 30px;
+    font-size: 1.2rem;
+    text-align: justify;
+    word-break: break-all;
+    > li {
+      list-style-type: decimal-leading-zero;
+      & u {
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+/* backgroun-color animation*/
+
+.bg-anime {
+  background-color: burlywood;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  margin: auto;
+  animation-name: background;
+  animation-duration: 4s;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* @keyframes background {
+  from {
+    background-color: coral;
+  }
+  to {
+    background-color: darkkhaki;
+  }
+} */
+@keyframes background {
+  0% {
+    background-color: coral;
+  }
+  25% {
+    background-color: cadetblue;
+  }
+  50% {
+    background-color: magenta;
+  }
+  100% {
+    background-color: darkkhaki;
+  }
+}
+
+.outer {
+  background-color: rgb(114, 29, 46);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.inner {
+  background-color: gray;
+  width: 50%;
+  height: 50%;
+  /* animation: travel 2s infinite alternate 2s; */
+  /* animation: travel 2s infinite alternate-reverse; */
+  /* &:hover {
+    animation: travel 2s infinite alternate-reverse;
+  } */
+  animation: travel 2s infinite alternate-reverse;
+}
+
+@keyframes travel {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+    border-radius: 50%;
+  }
+  66% {
+    transform: translate(-100%, -100%);
+  }
+  100% {
+    transform: translateX(100%);
+    border-radius: 50%;
+  }
+}
+
+.shake-anime {
+  text-align: center;
+  & i {
+    font-size: 10rem;
+    color: gold;
+    &:hover {
+      animation: shake 0.4s infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
