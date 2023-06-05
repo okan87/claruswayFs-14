@@ -1,0 +1,115 @@
+:root {
+  --red: #dc3545;
+}
+/*! -------------- 1- NAVBAR ---------------- */
+/* .navbar {
+  background-color: seashell !important;
+} */
+.navbar .navbar-nav {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navbar .nav-link {
+  transition: color 0.7s;
+}
+
+.navbar .nav-link:hover {
+  color: var(--red);
+}
+
+/*! ------------- 2- CAROUSEL --------------- */
+.carousel-item {
+  max-height: calc(100vh - 88px);
+}
+
+.carousel-caption h5 {
+  color: var(--red);
+  font-size: 2.4rem;
+  text-shadow: 3px 3px 3px black;
+}
+.carousel-caption p {
+  text-shadow: 3px 3px 3px black;
+  font-weight: 600;
+}
+
+.carousel-caption .btn {
+  width: 7rem;
+}
+.carousel-caption {
+  bottom: 6rem;
+}
+
+.carousel-indicators {
+  gap: 0.7rem;
+}
+
+/*! bootstrap tarafından verilmiş stilleri ezmek için !important kullanılması gerekir*/
+.carousel-indicators button {
+  background-color: var(--red) !important;
+  height: 0.4rem !important;
+  width: 3rem !important;
+}
+
+/*! ------------ 3- ABOUT SECTION ----------- */
+
+/*! ------------- 4- INSTRUCTORS -------------*/
+
+section#instructors .card {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+section#instructors .card:hover {
+  transform: scale(1.03);
+}
+section#instructors i {
+  transition: opacity 0.6s;
+}
+section#instructors i:hover {
+  opacity: 0.5;
+}
+/*! ----------- 4- STUDENTS SECTION ----------*/
+
+/*! ----------- 5- COURSES SECTION ----------- */
+
+.nav-pills .nav-link.active {
+  background-color: var(--red);
+}
+.nav-pills .nav-link {
+  color: white;
+}
+
+/*! ----------- 6- CONTACT SECTION ------------ */
+
+/*! --------------- 7- FOOTER ----------------- */
+footer i {
+  margin-right: 0.8rem;
+  transition: color 1s;
+  cursor: pointer;
+}
+footer i:hover {
+  color: var(--red);
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.btn-up:hover {
+  color: black;
+}
+.btn-up:hover i {
+  transform: scale(1.2);
+  font-size: 1.4rem;
+}
