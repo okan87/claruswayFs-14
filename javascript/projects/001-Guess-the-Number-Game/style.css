@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    color: red;
+}
+h1{
+    margin: 5rem;
+}
+.images{
+    margin: 2rem;
+}
+img{
+
+    width: 5rem;
+    height: 5rem;
+}
+input, button{
+    padding: 1rem;    
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+button{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+button:hover{
+
+    opacity: 0.8;
+}
+p{
+    margin: 1rem;
+}
