@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Stone, Paper, Scissors</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="score-card">
+        <p class="top">Top Score: <span id="top-score"> 0 : 0</span></p>
+
+        <p class="score">
+          You <span id="your-score">0</span> : <span id="pc-score">0</span> PC
+        </p>
+
+        <p class="description">Please make your selection</p>
+
+        <article class="selection">
+          <img src="./assets/rock.png" alt="rock" id="rock" />
+          <img src="./assets/paper.png" alt="paper" id="paper" />
+          <img src="./assets/scissor.png" alt="scissor" id="scissor" />
+        </article>
+      </section>
+      <section class="choice-section">
+        <article class="choices">
+          <div id="your-choice"></div>
+          <div id="pc-choice"></div>
+        </article>
+        <p class="message"></p>
+      </section>
+      <section class="modal-card">
+        <article class="modal show">
+          <p>Game Over</p>
+          <p id="final-message">You Win</p>
+          <button id="play-again">Play Again</button>
+        </article>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
