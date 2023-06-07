@@ -1,0 +1,18 @@
+
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+.btn{
+    /* position: fixed;
+    margin: auto;
+     */
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
