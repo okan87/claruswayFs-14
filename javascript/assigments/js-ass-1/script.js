@@ -18,14 +18,14 @@ firstBtn.addEventListener("click", () => {
 });
 
 //* Second Buton events
-SecondBtn.addEventListener("mouseover", ()=>{
-    changeBackground();
-})
+SecondBtn.addEventListener("mouseover", () => {
+  changeBackground();
+});
 
 //! ************FUNCTIONS*************
 
 const changeBackground = (e) => {
-    const colorArr = [PINK,RED,PURPLE,BLUE,GREEN,YELLOW]
-    const randomColor = colorArr[Math.floor(Math.random()*6)]
-  containerDiv.style.backgroundColor =randomColor
+  const colorArr = [PINK, RED, PURPLE, BLUE, GREEN, YELLOW];
+  const randomColor = colorArr[Math.floor(Math.random() * 6)];
+  containerDiv.style.backgroundColor = randomColor;
 };
