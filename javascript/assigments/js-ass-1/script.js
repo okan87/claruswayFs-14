@@ -29,3 +29,6 @@ const changeBackground = (e) => {
   const randomColor = colorArr[Math.floor(Math.random() * 6)];
   containerDiv.style.backgroundColor = randomColor;
 };
+window.addEventListener("load", ()=> {
+  changeBackground()
+})
