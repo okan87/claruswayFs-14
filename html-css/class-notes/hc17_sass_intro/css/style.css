@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*/ partial dosyaları @import ifadesiyle ana dosyamıza import edip kullanabiliriz*/ /*değişken tanımalrken $ işaretini kullanıyoruz.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink; /*değişkenşi kullanırkende aynı şekilde $ işaretini kullanıyoruz*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/** Nesting */
+header {
+  background-color: #30a7c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header img {
+  width: 80px;
+  border: 2px solid brown;
+  border-radius: 11px;
+  cursor: pointer;
+}
+header img:hover {
+  /*! içinde bulunduğumuz lementi & ile refer edebiliriz*/
+  scale: 1.1;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  padding: 0.5rem;
+  display: inline-block;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hotpink;
+  padding: 1rem;
+  line-height: 2rem;
+}
+.banner aside button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(224, 169, 169);
+  cursor: pointer;
+}
+.banner aside button:hover {
+  background-color: pink;
+}
+.banner img {
+  width: 30%;
+}
+
+/*! mixin @include */
+/* fonksiyon tanımlıyoruz aslında. Bu fonksiyon parametre alabilen bir fonksiyon. Parametreleri tanımalrken $ işaretini kullanıyoruz. Mixinler parametre almak zorunda değildir. yani static yapılar da oluşturabiliriz. */
+/*mixinleri çaığırırken @include anahtar kelimesiyle çağırıyoruz.*/
+.cards {
+  display: flex;
+  gap: 0.5rem;
+}
+.cards .card1 {
+  background-color: yellow;
+  color: darkblue;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+.cards .card2 {
+  background-color: red;
+  color: yellow;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+.cards .card3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+.cards .card4 {
+  background-color: maroon;
+  color: darkblue;
+  text-align: center;
+  width: 25%;
+  height: 14rem;
+  border: 2px solid brown;
+  border-radius: 1rem;
+}
+
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.articles .article1, .articles .article2 {
+  background-color: gray;
+  width: 50%;
+  height: 12rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+footer p {
+  background-color: hotpink;
+}
+footer .social-icons {
+  display: flex;
+}
+footer .social-icons .social1 {
+  width: 20%;
+  padding: 3px;
+  background-color: #8b8ba9;
+  font-size: 1rem;
+  color: black;
+  text-decoration: overline;
+}
+footer .social-icons .social2 {
+  width: 20%;
+  padding: 6px;
+  background-color: #7d7d9e;
+  font-size: 2rem;
+  color: red;
+  text-decoration: overline;
+}
+footer .social-icons .social3 {
+  width: 20%;
+  padding: 9px;
+  background-color: #6e6e93;
+  font-size: 3rem;
+  color: brown;
+  text-decoration: overline;
+}
+footer .social-icons .social4 {
+  width: 20%;
+  padding: 12px;
+  background-color: #636385;
+  font-size: 4rem;
+  color: burlywood;
+  text-decoration: underline;
+}
+footer .social-icons .social5 {
+  width: 20%;
+  padding: 15px;
+  background-color: #585877;
+  font-size: 5rem;
+  color: tomato;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
