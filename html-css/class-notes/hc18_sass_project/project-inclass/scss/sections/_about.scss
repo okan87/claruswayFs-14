@@ -1,0 +1,24 @@
+// about
+.about {
+  @include flexMix(flex);
+  margin: 3rem auto;
+  width: 90%;
+  gap: 3rem;
+  &__image{
+    @include bgImage(500px,45%,"../assets/image2.png");// image yolu verirken css dosyamızın konumuna göre tanımlıyoruz.
+  }
+  &__text {
+    width: 45%;
+    &--header{
+        @include fontMix("Playfair Display",normal,700,2rem,50px);
+        color: $h3Color;
+    }
+    &--paragraph {
+        @include fontMix("Mulish",normal,300,1.1rem,30px);
+        color:rgb(125, 121, 135);
+    }
+    &--button {
+        @include btnMix(35%);
+    }
+  }
+}

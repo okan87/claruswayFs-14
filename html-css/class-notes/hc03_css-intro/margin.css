@@ -1,0 +1,36 @@
+yu* {
+  margin: 0;
+  padding: 0s;
+}
+
+/* body {
+  background-color: burlywood;
+} */
+.container {
+  background-color: bisque;
+  margin: 50px; /*? 4 tarafa 50px bosluk birakir*/
+  margin: 10px 30px; /*? ust-alt:10, sag-sol:30px */
+  margin: 10px 20px 30px 40px;
+
+  /*! Bir blok element icerinde inline elementler var ise bunlar text-align ile hizalanabilir. Blok element icerisindeki blok elementler text align ile hizalanamaz. */
+
+  text-align: center;
+
+  /*? container div'ine her yonde 10px'lik bir ic alan acmis olduk. */
+  /* padding: 10px;*/
+  padding: 20px 10px;
+}
+
+.div {
+  background-color: blueviolet;
+
+  width: 100px;
+  /* height: 30px; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+  /*? Bir blok element içersindeki bir başka blok element margin : auto ile ortalanabilir. */
+  /* margin: auto;*/
+  margin: 20px auto;
+}

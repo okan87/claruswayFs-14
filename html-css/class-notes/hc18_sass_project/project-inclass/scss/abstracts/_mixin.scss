@@ -1,0 +1,63 @@
+// mixin
+
+@mixin flexMix($d, $j: center) {
+  // $j ye default değer atadık
+  display: $d;
+  justify-content: $j;
+  align-items: center;
+}
+
+@mixin fontMix($family, $style, $weight, $size, $height) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin bgImage($height, $width, $url) {
+  height: $height;
+  width: $width;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url($url);
+}
+
+@mixin btnMix($width) {
+  margin: 1rem 0px;
+  border: none;
+  background: $btnColor;
+  border-radius: 8px;
+  //   font-family: Inter;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 0.9rem;
+  @include fontMix("Inter", normal, 500, 0.9rem, auto);
+  width: $width;
+  height: 30px;
+  color: $mainColor;
+}
+
+@mixin media-sm {
+  @media only screen and (max-width: 429px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 769px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1369px) {
+    @content;
+  }
+}

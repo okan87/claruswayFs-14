@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animation</title>
+  </head>
+  <body>
+    <header>
+      <h1>ANIMATION</h1>
+      <p>
+        CSS animasyonları ile HTML öğelerini animasyonu hale getirerek farklı ve
+        eğlenceli senaryolar oluşturabilirsiniz.
+      </p>
+      <p>
+        CSS animation ile bir HTML öğesinin başlangıç stilinden bitiş stiline
+        kadar olan süreçte efektli bir şekilde geçiş yapmasıdır. @keyframes
+        kuralı ile animasyon sürecini yapılandırmamız gerekmektedir.
+      </p>
+      <code
+        >animation: @keyframes name | duration | easing-function | delay |
+        iteration-count | direction | fill-mode | play-state</code
+      >
+    </header>
+    <main>
+      <ul>
+        <li>
+          <u>animation-name:</u> Kullanmak istediğimiz animasyonun ismi.
+          Yukarıda @keyframes ornek-animasyon olarak tanımladığımız
+          ornek-animasyon değerini buraya yazıyoruz.
+        </li>
+        <li>
+          <u>animation-duration:</u> CSS animasyonun gerçekleşme süresini
+          belirtir. saniye birimi s ve mili-saniye birimi ms 1s = 1000ms
+          kullanılabilir.
+        </li>
+        <li>
+          <u>animation-timing-function:</u> Bu özellik animasyonun zamanlamasını
+          daha esnek hale getirerek yapılandırır. İvmelenmeler ekleyerek
+          animasyonda geçişleri daha estetik bir hale getirmek için bir çok web
+          geliştirici tarafından kullanılmaktadır.
+          <ul>
+            <li>
+              <u>ease:</u>cubic-bezier(0.25, 0.1, 0.25, 1.0) değerine eşittir.
+              ease-in değerinde animasyon ortaya doğru hızlanır ve sonrasında
+              yavaşlayarak durur.
+            </li>
+            <li>
+              <u>ease-in:</u>cubic-bezier(0.42, 0, 1.0, 1.0) değerine eşittir.
+              ease-in değerinde animasyon yavaş bir şekilde başlar ve
+              tamamlanana kadar hızlanır.
+            </li>
+            <li>
+              <u>ease-out:</u>cubic-bezier(0, 0, 0.58, 1.0) değerine eşittir.
+              Animasyon hızlı bir şekilde başlar ve yavaşlayarak sonlanır.
+            </li>
+            <li>
+              <u>ease-in-out:</u>cubic-bezier(0.42, 0, 0.58, 1.0) değerine
+              eşittir. Animasyon yavşça başlar ve hızlanarak geçiş yapar, sonra
+              tekrar yavaşlayarak animasyonu tamamlar.
+            </li>
+            <li>
+              <u>linear:</u>cubic-bezier(0.0, 0.0, 1.0, 1.0) değerine eşittir.
+              Animasyonun başından sonuna kadar animasyon hızı eşit bir şekilde
+              devam eder.
+            </li>
+            <li>
+              <u>steps:</u>Adımlı olarak animasyonu çalıştırır, animasyon akmaz
+              belirlenen sayıya göre bölerek çalışır.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <u>animation-iteration-count:</u> Animasyonun tekrar sayısı; kaç kez
+          tekrar edeceğini belirtebilirsiniz. 3 olarak belirttiğimizde animasyon
+          3 defa çalışacaktır. Yada <strong>infinite</strong> diyerek sonsuz
+          çalışmasını isteyebiliriz.
+        </li>
+        <li>
+          <u>animation-direction:</u> Animasyonun yönü. Varsayılan olarak
+          animasyon, baştan sonra doğru çalışacaktır. Animasyonun yönünü, yön
+          değiştirip değiştirmeyeceğini, başlangıç noktasında kendini tekrar
+          edip etmeyeceği animation-direction ile belirlenir.
+          <ul>
+            <li><u>normal:</u> Animasyon normal sürecinde oynar.</li>
+            <li>
+              <u>reverse</u> Animasyon geriden oynatılmaya başlanır.Son adımdan
+              ilk adıma gelir.
+            </li>
+            <li>
+              <u>alternate:</u> Animasyon ilk kareden başlar, son kareye
+              geldiğinde bu sefer tam tersine son kareden başlar ve tekrar ilk
+              karede biter.
+            </li>
+            <li>
+              <u>alternate-reverse:</u> Animasyon son kareden başlar, ilk kareye
+              geldiğinde bu sefer tam tersine ilk kareden başlar ve son karede
+              biter.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <u>animation-delay:</u> özelliği animasyonun nekadar gecikmeli olacak
+          başlayacağını belirtir. saniye birimi s ve mili-saniye birimi ms.
+          Örneğin, 2s olarak belirttiğimizde animasyon 2 saniye gecikmeli olarak
+          başlayacaktır.
+        </li>
+        <li>
+          <u>animation-fill-mode:</u> CSS animasyonları animasyon başlamadan
+          önce ve animasyon tamamlandıktan sonra normal şartlar altında
+          animasyonun eklendiği HTML öğesini etkilemez. Normal şartlarda
+          animasyondan tamamlandıktan sonra HTML öğesi animasyondan önceki
+          stiline döner. İşte bu durumda bazı istenmeyen sert geçişler
+          yaşanabilir. Örnek: Eğer animasyon bittiğinde arka plan renginiz bir
+          anda kırmızdan yeşile sert bir geçiş yapıyor ise bu tarz durumlardan
+          kurtulmak için animation-fill-mode özelliğini kullanmanız
+          gerekecektir.
+          <ul>
+            <li>
+              <u>none:</u>Animasyon yürütülmediği takdirde öğeye her hangi bir
+              stil uygulanmaz. Öğe animasyon tamamlandıktan sonra eski stiline
+              geri döner.
+            </li>
+            <li>
+              <u>forwards:</u>Animasyon uygulanan HTML öğesi animasyonun son
+              kademesindeki stillere sahip olarak animasyonu bitirecektir.
+              Animasyon tamamlandıktan sonra orjinal stilinde göstermez
+              animasyonun son karesindeki stiller onu değiştirir.
+            </li>
+            <li>
+              <u>backwards:</u>Animasyondaki ilk sahnenin stillerine sahip
+              olacaktır. Animasyon başladığı noktada bitecektir. Ancak bu
+              değerler animation-direction değerlerine bağlı değişir.
+            </li>
+            <li>
+              <u>both:</u>hem başlangıç hem de son karede animasyonun stillerini
+              takip edecek ve animasyonun özelliklerini bu sayede genişletmiş
+              olursunuz.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <u>keyframes:</u> animasyonun kademeli olarak oluşturlmasını sağlayan
+          bir kuraldır. Tüm animasyon sahnelerini @kayframes animationName
+          içerisinde tanımlıyoruz.
+          <pre>
+@keyframes animationName {
+            from{/*başlangıç noktası*/
+                *istenilen özellikler*
+            }
+            to {/*bitiş noktası*/
+                *istenilen özellikler*
+            }
+        }
+        </pre
+          >
+          <pre>
+@keyframes animationName {
+            0%{/*başlangıç noktası*/
+                *istenilen özellikler*
+            }   
+            ...
+            100% {/*bitiş noktası*/
+                *istenilen özellikler*
+            }
+        }
+        </pre
+          >
+        </li>
+      </ul>
+    </main>
+
+    <hr />
+    <h2>from to kullanımı</h2>
+    <div class="bg-anime"></div>
+
+    <hr />
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+    <hr />
+    <div class="shake-anime">
+      <h1>SHAKE ANIMATION</h1>
+      <i class="fa-solid fa-bell"></i>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

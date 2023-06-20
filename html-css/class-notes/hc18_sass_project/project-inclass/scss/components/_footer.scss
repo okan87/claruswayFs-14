@@ -1,0 +1,18 @@
+// footer
+.footer {
+  background-color: #f9f9fb;
+  height: 10vh;
+  margin: auto;
+  @include flexMix(flex);
+  &__icons {
+    @for $i from 1 through 5 {
+      .social#{$i} {
+        padding: 0.4rem;
+        transition: color 1s;
+        &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+  }
+}

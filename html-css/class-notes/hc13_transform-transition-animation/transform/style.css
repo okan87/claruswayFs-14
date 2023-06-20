@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkcyan;
+}
+.navbar img {
+  height: 60px;
+  padding: 0.5rem;
+}
+.navbar img:hover {
+  /* height: 150px; */
+  transform: scale(1.9) rotate(45deg);
+}
+
+/* notes */
+main {
+  text-align: center;
+}
+
+ul {
+  margin: 2rem;
+  padding: 2rem;
+  line-height: 30px;
+  font-size: 1.2rem;
+  text-align: justify;
+  word-break: break-all;
+}
+li {
+  list-style-type: decimal-leading-zero;
+}
+li u {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.text {
+  text-align: center;
+  margin: 2rem auto;
+  width: 50vw;
+  font-size: 2rem;
+}
+
+/* ******** TRANSFORM-ROTATE ************ */
+/* rotate içinde ... degree (deg) olarak değer verilir */
+/* 90 ve 270 deerelecelerde yazılar tam dik olduklarından ve 3 boyutlu olarak bakamadığımız için gözükmezler */
+
+.rotate-x {
+  background-color: chocolate;
+  transform: rotateX(180deg);
+}
+
+.rotate-y {
+  background-color: crimson;
+  transform: rotateY(180deg);
+}
+
+.rotate {
+  background-color: greenyellow;
+  /* transform: rotate(45deg); */
+  /* transform: rotate(-30deg); */
+}
+
+/* ******** TRANSFORM-SCALE ************ */
+/* scale boyutlandırma için kullanılır */
+
+.scale-x {
+  background-color: cornflowerblue;
+  transform: scaleX(2);
+  /* transform: scaleX(-1); y eksenine göre simetriğini alır */
+}
+
+.scale-y {
+  background-color: darkorange;
+  transform: scaleY(2);
+  /* transform: scaleY(-1); x eksenine göre simetriğini alır*/
+}
+
+/* .scale {
+  background-color: deeppink;
+}
+
+.scale:hover {
+  transform: scale(3);
+   width: 75vw;
+  height: 200px; 
+} */
+
+.scale {
+  background-color: deeppink;
+  transform: scale(1.1);
+  &:hover {
+    transform: scale(3);
+    /* transform: scale(1.1); transformla veri,len ölçek orjinal ölçeğimizi değiştirmediği için 1.1 değişiklik olarak algılanmıyor. */
+  }
+}
+
+/* ************* -TRANSFORM- TRANSLATE ********* */
+/* Translate öteleme,hareket ettirmek için kullanılır. */
+
+.translate-div {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h1 {
+    text-align: center;
+  }
+  .box {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+.translate-x {
+  background-color: #b4cf66;
+  &:hover {
+    /* transform: translateX(100px); */
+    transform: translateX(-100px);
+  }
+}
+
+.translate-y {
+  background-color: #ffec5c;
+  /* transform: translateY(150px); */
+  /* transform: translateY(-250px); */
+}
+
+.translate {
+  background-color: #ff5a33;
+  &:hover {
+    /* transform: translate(50px); */
+    transform: translate(
+      50px,
+      350px
+    ); /*ilk parametre x ekseni,ikinci parametrede y ekseni*/
+  }
+}
+
+/* ************* -TRANSFORM- SKEW ********* */
+
+.skew-div {
+  margin: 2rem;
+  text-align: center;
+  .image {
+    border: 1px solid saddlebrown;
+    border-radius: 13px;
+    transform: skew(45deg);
+    /* transform: skewX(45deg); */
+    /* transform: skewY(45deg); */
+  }
+}

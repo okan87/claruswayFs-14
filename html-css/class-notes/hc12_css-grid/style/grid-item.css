@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 1rem 1.5rem;
+  border: 1px solid red;
+
+  /*? Grid'i yatay düzlemde hizalar */
+  justify-content: center;
+}
+
+.content {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c3 {
+  align-self: flex-end;
+}
+.c6 {
+  /*! item'lari bireysel olarak yatay duzlemde hizalar. */
+  justify-self: end;
+}
+.c7 {
+  /*! item'lari bireysel olarak dikey duzlemde hizalar. */
+  align-self: flex-start;
+}
+
+.c1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: sandybrown;
+}
+
+.c4 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: red;
+}
+
+.c8 {
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5; */
+
+  /*!  grid-area: row_start / col_start / row_end / col_end */
+  grid-area: 3/2/5/4;
+  background-color: skyblue;
+}
+.c12 {
+  grid-column: span 3;
+  background-color: springgreen;
+}
+
+.c9 {
+  grid-row: span 2;
+  background-color: violet;
+}
+.c13 {
+  grid-area: span 2 / span 2;
+}

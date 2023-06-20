@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro</title>
+    <link rel="stylesheet" href="intro.css" />
+    <style>
+      /* Internal CSS */
+      nav {
+        border: 2px solid red;
+      }
+
+      section {
+        color: blueviolet;
+      }
+      #section-1 {
+        color: rgba(49, 210, 21, 0.564);
+        color: hsl(293, 100%, 50%);
+        color: hsl(293, 80%, 50%);
+        color: hsl(293, 100%, 40%);
+      }
+    </style>
+  </head>
+  <body style="text-align: center">
+    <!-- 
+   * Inline CSS, HTML elementlerine style keyword'u ile eklenir.
+   * style kelimesinin ici aslinda CSS alanidir.
+   * Sadece eklenen element icin bir stillendirme gerceklestirir.
+   * Bu sebeple cok pratik bir yontem degildir.
+   * HTML kodlarini kalabaliklastirdigi icin kodun gorunumunu karmasiklastirir.
+ -->
+    <header><h1 style="color: red">CSS INTRO</h1></header>
+
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- * <nav>Other NAV</nav> -->
+
+    <main>
+      <section id="section-1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+        officiis qui odio ab sit! Tempora totam, odit, minima reiciendis quasi
+        libero, dolorem deleniti harum fugiat labore fugit possimus. Est, optio.
+      </section>
+
+      <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint ad
+        vero minima nesciunt quisquam inventore! Explicabo earum laborum alias
+        provident minima voluptatum repellendus sunt eum modi? Qui praesentium
+        est, voluptates, adipisci natus quos nemo dolores eos soluta aspernatur
+        earum?
+      </section>
+
+      <div>
+        <img
+          class="images"
+          src="https://cdn.pixabay.com/photo/2023/04/17/15/45/comma-7932755_640.jpg"
+          alt=""
+        />
+
+        <img
+          class="images"
+          src="https://cdn.pixabay.com/photo/2023/04/21/13/08/tulip-7941895__340.jpg"
+          alt=""
+        />
+      </div>
+    </main>
+  </body>
+</html>

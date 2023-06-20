@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* notlar */
+main {
+  margin: 2rem;
+  text-align: center;
+}
+main p {
+  margin-bottom: 1rem;
+}
+main code {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: red;
+}
+main > ul {
+  padding: 2rem;
+  line-height: 30px;
+  font-size: 1.2rem;
+  text-align: justify;
+  word-break: break-all;
+}
+
+main > ul > li {
+  list-style-type: decimal-leading-zero;
+}
+li u {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 70px;
+  overflow: hidden;
+  padding: 1rem;
+  /* transition-property: height; */
+  /* transition-duration: 3s; */
+  /* transition-timing-function: ease-in; */
+  /* transition-delay: 0.7s; */
+  /*shorthand*/
+  /* transition: height 3s ease-in 0.7s; */
+  transition: height 3s cubic-bezier(0.16, 0.84, 0.86, -0.03) 0.7s;
+}
+
+nav:hover {
+  height: 250px;
+}
+
+nav i {
+  font-size: 3rem;
+}
+nav ul {
+  width: 100%;
+}
+nav li {
+  list-style: none;
+  border-bottom: 1px solid slategrey;
+  font-size: 1.3rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  text-align: center;
+  margin: 1rem;
+  & button {
+    background-color: rgb(8, 120, 165);
+    color: yellow;
+    border: 2px solid gray;
+    padding: 20px;
+    font-size: 1.3rem;
+    border-radius: 14px;
+    width: 150px;
+    /* transition: background-color 3s, color 2s; */
+    /* transition: all 2s; */
+    &:hover {
+      transition: all 2s;
+      background-color: red;
+      border-radius: 30px;
+      width: 300px;
+      color: white;
+    }
+  }
+}
+
+/* input {
+  margin: 3rem;
+  height: 40px;
+  background-color: brown;
+  transition: width 3s; kendisine width vermediğimiz için değişikliği algılamadı ve o nedenle efektimiz çalışmadı.
+  &:focus {
+    width: 350px;
+  }
+} */
+input {
+  margin: 3rem;
+  height: 40px;
+  width: 50px;
+  background-color: brown;
+  transition: width 3s;
+  &:focus {
+    width: 350px;
+  }
+}

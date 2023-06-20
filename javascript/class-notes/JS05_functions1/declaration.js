@@ -21,7 +21,7 @@ yazdirMerhaba() //! invoke, call
 //*****************************************/
 
 //! Parametre listesi (argüman listesi)
-function yazdirParametre(message, name="FS14") {
+function yazdirParametre(message, name = "Cohort14") {
   console.log(message, name)
 }
 yazdirParametre("Hello", "FS15")
@@ -43,15 +43,15 @@ console.log(new Date()) //? Sistem tarihi ve saatini verir.
 
 function calculate(name, yob) {
   const age = new Date().getFullYear() - yob
-  console.log('Sampiyon Fenerbahce');
-  console.log(`${name} is ${age} years old`)
-  return 'Fenerbajce'
+  // console.log(`${name} is ${age} years old`)
+  return age
 }
-// calculate("İsmet", 1890)
+
+console.log(calculate("Ahmet", 1990))
 const ismetAge = calculate("İsmet", 1890)
 console.log("Ismet's Age:", ismetAge)
 
-//* ORNEK4:51. 
+//* ORNEK4:
 //******************************************/
 
 function add(num1, num2) {

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANFORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="https://www.google.com/">
+        <img
+          src="https://yt3.googleusercontent.com/NNj9IXg2pwpyd319NsCf_6rcdGyss5WlA-vUHxyvUY2I1ykVBG4vw9DRsQCHeJxYcqSikVll=s900-c-k-c0x00ffffff-no-rj"
+          alt="" />
+      </a>
+      <span>Clarusway</span>
+    </nav>
+
+    <main>
+      <h1>TRANSFORM</h1>
+      <p>
+        CSS Transform Özelliği, Türkçesiyle Dönüştürme özelliği sayesinde div
+        bloklarına veya görsellere çeşitli görsel efektler uygulayabiliriz.
+      </p>
+      <ul>
+        <li>
+          <u>rotateX() işlevi</u>: bir öğeyi deforme etmeden apsis (yatay eksen
+          - x ekseni) etrafında döndüren bir dönüşümü tanımlar.Nesnenin kaç
+          derece döneceğini <strong>deg</strong> türünde belirtmeliyiz.90 ve 270
+          deerelecelerde yazılar tam dik olduklarından ve 3 boyutlu olarak
+          bakamadığımız için gözükmezler.
+        </li>
+        <li>
+          <u>rotateY() işlevi</u>: bir öğeyi ordinat (dikey eksen - y ekseni)
+          etrafında deforme etmeden döndüren bir dönüşümü tanımlar.Nesnenin kaç
+          derece döneceğini <strong>deg</strong> türünde belirtmeliyiz.
+        </li>
+        <li>
+          <u>rotate() işlevi</u>: adından da anlaşılacağı üzere nesneyi
+          döndürmek için kullanılan bir parametre türüdür. Nesnenin kaç derece
+          döneceğini <strong>deg</strong> türünde belirtmeliyiz.
+        </li>
+        <li>
+          <u>skew() işlevi</u>: 2B düzlemde bir öğeyi eğen bir dönüşümü
+          tanımlar.skew() işlevi, her yönde uygulanacak eğriltme miktarını
+          temsil eden bir veya iki parametre ile belirtilir. Yalnızca bir
+          parametre verilirse x ekseni için kullanılır ve y ekseninde eğrilik
+          olmaz. Parametre olarak vereceğimiz değer
+          <strong>angel(açı)</strong> formatında olmalıdır.Yamultma işlemini
+          yaparken derece ile ne miktarda yamulacağını belirtmekteyiz.
+        </li>
+        <li>
+          <u>scaleX() işlevi</u>: bir HTML elementinin yatay (x) eksende
+          ölçeklendirilmesini sağlar. Bu özellik, elementin genişliğini veya
+          daraltmasını kontrol etmek için kullanılır.Bu fonksiyona verilen
+          parametre, ölçeklendirme değerini belirtir. Ölçeklendirme değeri 1 ise
+          elementin orijinal genişliği korunur. Değer 1'den büyük ise element
+          genişletilir, değer 1'den küçük ise daraltılır. Negatif değerlerde
+          verilebilir. Örneğin -1 değeri verirsek x ekseninde simetrik olarak
+          yansıtır.
+        </li>
+        <li>
+          <u>scaleY() işlevi</u>:bir HTML elementinin dikey (y) eksende
+          ölçeklendirilmesini sağlar. Bu özellik, elementin yüksekliğini veya
+          daraltmasını kontrol etmek için kullanılır. Verilen ölçeklendirme
+          değerleri scaleX ile aynıdır.
+        </li>
+        <li>
+          <u>scale() işlevi</u>:bir HTML elementini hem yatay (x) hem de dikey
+          (y) eksende aynı oranda ölçeklendirmek için kullanılır.Tek parametre
+          verirske eşit oranda ölçeklendirir.İlk parametre x ekseni,ikinci
+          parametre y eksenini temsil eder.
+        </li>
+        <li>
+          <u>translateX() işlevi</u>: bir HTML elementini yalnızca yatay (x)
+          eksende belirli bir mesafede hareket ettirmek için kullanılır. Bu
+          özellik, elementin yatay konumunu değiştirmek ve yatay yönde hareket
+          etmek için kullanılır. Fonksiyona verilen parametreler, elementin
+          yatay hareket miktarını belirtir. Parametreler px (piksel), % (yüzde)
+          veya em (ems) gibi birimlerle ifade edilebilir. Negatif değerler
+          alabilir.
+        </li>
+        <li>
+          <u>translateY() işlevi</u>: bir HTML elementini yalnızca dikey (y)
+          eksende belirli bir mesafede hareket ettirmek için kullanılır. Bu
+          özellik, elementin dikey konumunu değiştirmek ve dikey yönde hareket
+          etmek için kullanılır. Fonksiyona verilen parametreler, elementin
+          dikey hareket miktarını belirtir. Parametreler px (piksel), % (yüzde)
+          veya em (ems) gibi birimlerle ifade edilebilir. Negatif değerler
+          alabilir.
+        </li>
+        <li>
+          <u>translate() işlevi</u>: bir HTML elementini belirli bir mesafede
+          yatay (x) ve dikey (y) eksende hareket ettirmek için kullanılır. Bu
+          özellik, elementin konumunu değiştirmek ve hareket etmek için
+          kullanılır.. Fonksiyona verilen parametreler, elementin yatay ve dikey
+          hareket miktarını belirtir. Parametreler px (piksel), % (yüzde) veya
+          em (ems) gibi birimlerle ifade edilebilir. Negatif değerler alabilir.
+          İlk parametre x eksenini, ikinci parametre de y eksenini temsil eder.
+        </li>
+      </ul>
+    </main>
+
+    <hr />
+
+    <div class="text rotate-x">ROTATE-X</div>
+    <div class="text rotate-y">ROTATE-Y</div>
+    <div class="text rotate">ROTATE</div>
+    <div class="text scale-x">SCALE-X</div>
+    <div class="text scale-y">SCALE-Y</div>
+    <div class="text scale">SCALE</div>
+
+    <hr />
+    <div class="translate-div">
+      <h1>Translate</h1>
+      <div class="box translate-x">Translate-X</div>
+      <div class="box translate-y">Translate-Y</div>
+      <div class="box translate">Translate</div>
+    </div>
+
+    <hr />
+    <div class="skew-div">
+      <img
+        src="../images/PngItem_415236.png"
+        width="150px"
+        alt=""
+        class="image" />
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

@@ -8,99 +8,117 @@
   </head>
   <body>
     <h1>FORMS</h1>
-    <form action="result.html" method="get">
-      <section id="names">
-        <!--! NAME -->
-        <label for="name">Name</label>
-        <br />
+
+    <form action="result.html">
+      <section id="name">
+        <!-- NAME -->
+        <label for="isim">İsim</label> <br />
         <input
           type="text"
-          id="name"
-          placeholder="Enter your name"
+          id="isim"
+          placeholder="Adinizi giriniz"
           name="isim"
           value=""
           required
-        /><br /><br />
-        <!--! EMAIL -->
-        <label for="email">Email</label><br />
-        <input type="email" name="email" id="email" placeholder="email" />
+        />
         <br /><br />
-        <!--! PASSWORD -->
-        <label for="password">Password</label>
-        <br />
+
+        <!-- EMAIL -->
+        <label for="email">Email</label> <br />
         <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="min 8 chars"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email giriniz"
           required
         />
-        <br />
-        <br />
-        <!--! AGE -->
-        <label for="age">Age</label>
-        <br />
+
+        <br /><br />
+
+        <!-- PASSWORD -->
+        <label for="pass">Password</label> <br />
         <input
-          type="number"
-          name="age"
-          id="age"
-          min="0"
-          placeholder="Enter your age"
+          type="password"
+          id="pass"
+          name="pass"
+          placeholder="En az 8 karakter giriniz"
+          required
         />
         <br /><br />
-        <!--! BIRTHDAY DATE-->
-        <label for="birth">Birthday</label>
-        <br />
-        <input type="date" name="birthday" id="birth" />
-        <!--! GENDER RADIO BUTON-->
-        <p>Gender</p>
-        <label for="man">Man</label>
-        <input type="radio" name="gender" id="man" value="man" />
-        <br />
-        <label for="woman">Woman</label>
-        <input type="radio" name="gender" id="woman" value="woman" />
-        <br />
-        <label for="none">None</label>
-        <input type="radio" name="gender" id="none" value="none" checked />
+
+        <!-- AGE -->
+        <label for="age">Age</label> <br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="0"
+          max="160"
+          placeholder="Yasininzi giriniz"
+        />
         <br /><br />
-        <!--! FAVORI CARS-->
-        <p>FAVORI CARS</p>
+
+        <!-- GENDER  (RADIO BUTTON) -->
+        <p>Gender</p>
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="erkek" name="gender" value="erkek" />
+
+        <label for="kadın">Kadın</label>
+        <input type="radio" id="kadın" name="gender" value="Kadın" />
+
+        <label for="none">None</label>
+        <input type="radio" id="none" name="gender" value="None" checked />
+        <br /><br />
+
+        <label for="fav-cars">LUTFEN FAVORİ ARABALARINIZI SEÇİNİZ:</label>
+        <br />
+        <input type="checkbox" name="cars1" id="bmw" value="BMW" />
         <label for="bmw">BMW</label>
-        <input type="checkbox" name="car1" id="bmw" />
-        <br />
+
+        <input type="checkbox" name="cars2" id="mercedes" value="Mercedes" />
         <label for="mercedes">Mercedes</label>
-        <input type="checkbox" name="car2" id="mercedes" />
-        <br />
+
+        <br /><br />
+        <label for="dob">Dogum Tarihi</label> <br />
+        <input type="date" name="dob" id="dob" min="1990-01-01" />
+
         <br /><br />
       </section>
-      <!--! SELECT -->
+
+      <!-- SELECT -->
       <section>
-        <p>Tatli seciniz</p>
-        <select name="tatli" id="tatli">
-          <optgroup label="sutlu">
-            <option value="sutlac">Sutlac</option>
-            <option value="kazandibi">Kazandibi</option>
+        <select name="tatli" id="tali">
+          <optgroup label="şerbetli tatlilar">
+            <option value="künefe">Künefe</option>
+            <option value="havuç dilimi">H. Dilimi</option>
           </optgroup>
-          <optgroup label="serbetli">
-            <option value="kunefe">Kunefe</option>
-            <option value="baklava">Baklava</option>
-            <option value="havuc">Havuc Dilimi</option>
-            <option value="kadayif">Kadayif</option>
+
+          <optgroup label="sütlü tatlılar">
+            <option value="sütlaç">Sütlaç</option>
+            <option value="kazandibi">Kazandibi</option>
           </optgroup>
         </select>
       </section>
-      <!--! TextArea -->
+
+      <br><br>
+
+      <!-- TEXTAREA -->
       <section>
-        <br><br>
-        <label for="comment">Please enter comments</label>
-        <br>
-        <textarea name="comment" id="comment" cols="50" rows="10" style="resize: 100;" maxlength="100" placeholder="en fazla 100 karakter"></textarea>
-      </section>
-      <!--! SUBMIT -->
-      <section id="butons">
-        <br><br>
-        <input type="submit" value="Send" />
-        <input type="reset" value="Delete" />
+        <label for="yorum">Yorumlarınızı Giriniz:</label>
+        <br />
+        <textarea
+          name="yorum"
+          id="yorum"
+          cols="40"
+          rows="10"
+          style="resize: none"
+          maxlength="100"
+          placeholder="En fazla 100 karakter girilebilir"
+        ></textarea>
+
+      <section id="buttons">
+        <input type="submit" value="Kaydet" />
+        <input type="reset" value="Sil" />
       </section>
     </form>
   </body>

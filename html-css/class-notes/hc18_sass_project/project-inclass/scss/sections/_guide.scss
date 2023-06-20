@@ -1,0 +1,31 @@
+// guide
+.guide {
+  margin: 3rem auto;
+  @include flexMix(flex);
+  width: 90%;
+  gap: 2rem;
+  &__image {
+    @include bgImage(500px, 45%, "../assets/image3.png");
+  }
+  &__text {
+    width: 45%;
+    @include flexMix(flex);
+    flex-direction: column;
+    align-items: normal;
+    &--header {
+      @include fontMix("Playfair Display", normal, 700, 2rem, auto);
+      line-height: 50px;
+      color: $h3Color;
+    }
+    &--paragraph {
+      @include fontMix("Mulish", normal, 300, 1.1rem, auto);
+      line-height: 30px;
+      color: #7d7987;
+    }
+    &--button {
+    @include btnMix(40%);
+    // line-height: 20px;
+  }
+  }
+  
+}

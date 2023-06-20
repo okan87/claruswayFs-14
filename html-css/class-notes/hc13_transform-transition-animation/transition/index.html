@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Transition</title>
+  </head>
+  <body>
+    <nav>
+      <i class="fa-solid fa-bars"></i>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <main>
+      <h1>TRANSITION</h1>
+      <p>
+        CSS Transition Özelliği, bir elemanın iki state’i arasında transition,
+        yani geçiş yapmanızı sağlar. Genellikle hover gibi psuedo sınıfları ile
+        kullanılır.
+      </p>
+      <code
+        >transition: property name | duration | easing function | delay;</code
+      >
+      <ul>
+        <li>
+          <u>transition-property:</u> transition’ı uygulamak istediğimiz bir
+          veya birden fazla CSS property’sini belirtiriz.
+        </li>
+        <li>
+          <u>transition-duration:</u> Transition işleminin ne kadar sürede
+          gerçekleşeceğini belirtiriz. Tanımladığınız her bir
+          transition-property için dilerseniz tek bir duration
+          belirtebilirsiniz. Yada her bir property için ayrı ayrı transition
+          süresi belirtebilirsiniz.
+        </li>
+        <li>
+          <u>transition-timing-function</u>: transition’ın süresince hangi hızda
+          ve hangi aşamada olacağını belirtiriz.
+          <ul>
+            <li>
+              <u>ease:</u> Transition-timing-functionın default değeridir.
+              Transition yavaş başlar ortalarına doğru hızlanır ve yavaşlayarak
+              sona erer.
+            </li>
+            <li>
+              <u>ease-in:</u> Yavaş başlar ve transition sonuna kadar hızlanarak
+              devam eder.
+            </li>
+            <li>
+              <u>ease-out:</u> Transition hızlı başlar ve transition sonuna
+              doğru yavaşlar.
+            </li>
+            <li>
+              <u>linear:</u> Transition sabit hızda başlar. Öyle devam eder ve
+              aynı hızda sona erer.
+            </li>
+            <li>
+              <u>cubic-bezier:</u> cubic-bezier ile kendi transition efektinizi
+              belirleyebilirsiniz.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <u>transition-delay:</u> Bir geçişin başlamadan önce ne kadar süre
+          bekletileceğini belirleyebilirsiniz.
+        </li>
+      </ul>
+    </main>
+    <hr />
+    <div class="btn">
+      <button>Hover Me!</button>
+    </div>
+    <hr />
+    <input type="text" name="" id="" />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Travel Site</title>
+  </head>
+  <body>
+    <nav class="header">
+      <img src="./assets/Clarusway_Logo.png" alt="" class="header__logo" />
+      <i class="fa-solid fa-bars fa-2x"></i>
+      <ul class="header__links">
+        <li><button class="header__links--home">Home</button></li>
+        <li>
+          <button disabled class="header__links--disabled">Destination</button>
+        </li>
+        <li><button disabled class="header__links--disabled">About</button></li>
+        <li>
+          <button disabled class="header__links--disabled">Partner</button>
+        </li>
+        <li><button class="header__links--login">Login</button></li>
+        <li><button class="header__links--register">Register</button></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- home -->
+
+      <section class="home">
+        <div class="home__form">
+          <h2>Explore Travel</h2>
+          <h3>Holiday Finder</h3>
+          <hr />
+          <form action="">
+            <select name="" id="">
+              <option value="">Location</option></select
+            ><select name="" id="">
+              <option value="">Activity</option></select
+            ><select name="" id="">
+              <option value="">Grade</option></select
+            ><select name="" id="">
+              <option value="">Date</option>
+            </select>
+          </form>
+          <button class="home__form--button">Explore</button>
+        </div>
+        <div class="home__image"></div>
+      </section>
+
+      <!-- about -->
+
+      <section class="about">
+        <div class="about__image"></div>
+        <div class="about__text">
+          <h2 class="about__text--header">A new way to explore the world</h2>
+          <p class="about__text--paragraph">
+            For decades travellers have reached for Lonely Planet books when
+            looking to plan and execute their perfect trip, but now, they can
+            also let Lonely Planet Experiences lead the way.
+          </p>
+          <button class="about__text--button">Learn More</button>
+        </div>
+      </section>
+
+      <!-- destination -->
+
+      <section class="destination">
+        <div class="destination__header">
+          <h3>Featured destinations</h3>
+          <button>
+            <span>View all</span>
+            <svg
+              width="4"
+              height="9"
+              viewBox="0 0 6 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 1L5 5.5L1 10"
+                stroke="#FB8F1D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="destination__group">
+          <div class="destination__card">
+            <img src="./assets/raja.jpg" loading="lazy" alt="" />
+            <p>
+              <span>Raja Ampat</span>
+              <span>Indenosia</span>
+            </p>
+          </div>
+          <div class="destination__card">
+            <img src="./assets/Fanjingshan.jpg" loading="lazy" alt="" />
+            <p>
+              <span>Fanjingshan</span>
+              <span>China</span>
+            </p>
+          </div>
+          <div class="destination__card">
+            <img src="./assets/Vevey.jpg" loading="lazy" alt="" />
+            <p>
+              <span>Vevey</span>
+              <span>Switzerland</span>
+            </p>
+          </div>
+          <div class="destination__card">
+            <img src="./assets/Skadar.jpg" loading="lazy" alt="" />
+            <p>
+              <span>Skadar</span>
+              <span>Montenegro</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- guides -->
+
+      <section class="guide">
+        <div class="guide__text">
+          <h2 class="guide__text--header">A new way to explore the world</h2>
+          <p class="guide__text--paragraph">
+            For decades travellers have reached for Lonely Planet books when
+            looking to plan and execute their perfect trip, but now, they can
+            also let Lonely Planet Experiences lead the way.
+          </p>
+          <button class="guide__text--button">Learn More</button>
+        </div>
+        <div class="guide__image"></div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__icons">
+        <i class="fab fa-twitter fa-2x social1"></i>
+
+        <i class="fab fa-facebook fa-2x social2"></i>
+
+        <i class="fab fa-instagram fa-2x social3"></i>
+
+        <i class="fab fa-github fa-2x social4"></i>
+
+        <i class="fab fa-youtube fa-2x social5"></i>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

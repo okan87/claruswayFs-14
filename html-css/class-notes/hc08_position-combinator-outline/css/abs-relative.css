@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  font-size: 1.4rem;
+  border: 1px solid royalblue;
+}
+
+/*! Aksi belirtilmedigi sürece bir elemanin position'ı statiktir. */
+.static {
+  background-color: hotpink;
+  position: static; /*?default*/
+}
+
+/*! Bir eleman position:relative yapilirsa o zaman olmasi gereken akış konumundan left,top,right ve bottom miktarlari kadar uzaklastirilabilir. */
+.relative-1 {
+  background-color: rgba(244, 165, 96, 0.9);
+  position: relative;
+  /* top: -5rem;
+  left: 0rem; */
+  /*? top:0 elemanin ust taraf acisindan olmasi gereken konumda bulunmasi demektir. Negatif bir deger elamanin yukariya gelmesine, pozitif bir deger ise asagiya inmesine yol açar.) */
+  top: 0;
+
+  /*? Olması gereken konuma gore soldan 10rem saga kaysin */
+  left: 10rem;
+  z-index: 1;
+}
+
+.relative-2 {
+  background-color: rgba(76, 0, 130, 0.492);
+  position: relative;
+  top: -5rem; /*? 5rem yukari cik*/
+  left: 15rem; /*? 15rem saga kay*/
+  z-index: 2; /*? 2, 1 dan büyük olduğu için diger kutunun uzerinde bulunur*/
+  /*? z-index nin default deferi 0 dır*/
+}
+
+/*! Bir eleman position:absolute ise ve parent elemani da position:relative ise o zaman absolute eleman genel akisa gore degil relative (parent) elemana gore konumlandirilir. Ozellikle bu ikili bir resim uzerindeki yazıların konumunu belirlemek gibi bir birine gore goreceli konumlandirmalarda tercih edilir.*/
+.absolute {
+  position: absolute;
+  background-color: khaki;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.8rem;
+}
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  /* ?top ve left ile yüzdelik olarak bir elementi ortalamak mümkün ancak bu şekilde elemanin büyüklüğü dikkate alınmamış olunur. Bu sebeple tam olarak ortalamak için eleman x ve y ekseninde yarı yarıya kaydırılarak tam bir ortalama sağlanır. */
+  transform: translate(-50%, -50%);
+}

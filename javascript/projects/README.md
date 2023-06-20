@@ -2,16 +2,15 @@
 
 Javascript Workshop contains hands-on trainings and projects.
 
--[Checkout App](./001_Checkout_Page/README.md)
+- [Guess the Number](./001-Guess-the-Number-Game/README.md)
 
--[To Do App](./002-To-Do-App/README.md)
+- [Gider Takip Uygulaması](./002-Gider-Takip-Uygulamas%C4%B1/README.md)
 
--[Ios Calculator](./003-Ios-Calculator/README.md)
+- [To-Do App](./003-To-Do-App/README.md)
 
--[Guess the Number](./004-Find-the-Number-Game/README.md)
+- [Checkout App](./004-Checkout-App/README.md)
 
--[Weather App](./005-Weather-App/README.md)
+- [Crypto Coin App](./005-Crypto-Coin-App/README.md)
 
--[Digital Clock](./006-Digital-Clock/README.md)
 
 
