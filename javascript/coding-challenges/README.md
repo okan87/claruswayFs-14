@@ -16,4 +16,6 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [07- iOS Calculator](./CC-07/README.md)
 
+- [08- SSN (Social Security Number) Validator](./CC-08/README.md)
+
 
