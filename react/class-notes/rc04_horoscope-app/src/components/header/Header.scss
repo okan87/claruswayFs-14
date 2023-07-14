@@ -1,0 +1,37 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+.header{
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    margin-top: 15rem;
+    .text-shadow{
+        color:$secondaryColor;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+        letter-spacing: 0.2rem;
+        animation: flicker 0.5s ease-in-out infinite alternate;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            color:$cardNavBgColor;
+            cursor: pointer;
+        }
+    }
+    @keyframes flicker {
+        0%{
+            opacity: 0.5;
+            text-shadow: 2px 2px 10px $cardNavBgColor;
+        }
+        100%{
+            opacity: 1;
+            text-shadow: 2px 2px 10px $cardNavBgColor;
+        }
+    }
+}
+@include media-lg{
+    .header{
+        margin-top: 10rem;
+    }
+}

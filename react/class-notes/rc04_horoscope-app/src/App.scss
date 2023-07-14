@@ -1,0 +1,18 @@
+@import "./scss/mixins";
+@import "./scss/reset";
+@import  "./scss/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
+
+body{
+  font-family: 'Rubik Distressed', cursive;
+  background-image: $backgroundImage;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+p{
+  font-family: 'Almendra Display', cursive;
+  color: white;
+}
