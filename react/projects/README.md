@@ -10,6 +10,12 @@ List of projects within React projects as follows;
 
 - [04 - Checkout Page](./004-Checkout-Page/README.md)
 
+- [05 - Appointmnet App](./005-Appointment-App/README.md)
+
+- [06 - React Router Taask](./006-React-Router-Task/README.md)
+
+- [07 - Clarus Library](./007-Clarus-Library/README.md)
+
 
 
   

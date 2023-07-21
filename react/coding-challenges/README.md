@@ -6,6 +6,8 @@ List of coding challenges within React workshops as follows;
 
 - [02 - Interview Q-A App](./002-Interview-Q-A-App/README.md)
 
+- [03 - Product List](./003-Product-List/README.md)
+
 
 
 
