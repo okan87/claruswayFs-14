@@ -4,14 +4,14 @@ import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import Image from "react-bootstrap/Image"
 import { useContext } from "react"
-import { LoginContext } from "../context/LoginContext"
+import { useLoginContext } from "../context/LoginProvider"
 
 function Navs() {
   // ! Consuming login context
-  const { user, setUser } = useContext(LoginContext)
+  const { user, setUser } = useLoginContext()
 
   return (
-    <Navbar expand="sm">
+    <Navbar expand="md">
       <Container>
         <Navbar.Brand>
           <Link className="nav-link" to="/">
@@ -35,7 +35,7 @@ function Navs() {
               People
             </Link>
 
-            {user.email && user.password ? (
+            {user?.email && user?.password ? (
               <Link
                 className="nav-link"
                 to="/login"
