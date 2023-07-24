@@ -16,6 +16,8 @@ List of projects within React projects as follows;
 
 - [07 - Clarus Library](./007-Clarus-Library/README.md)
 
+- [08 - Movie App](./008-Movie-App/README.md)
+
 
 
   

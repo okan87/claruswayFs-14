@@ -8,6 +8,6 @@ List of coding challenges within React workshops as follows;
 
 - [03 - Product List](./003-Product-List/README.md)
 
-
+- [04 - Film Info](./004-Film-Info/README.md)
 
 
